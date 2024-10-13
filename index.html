@@ -60,8 +60,8 @@
 
   <!-- Container for the 4 charts in 2x2 grid -->
   <div class="container">
-    <!-- Bushfire Cases vs Deaths and Injuries by Australian States -->
-    <div id="bushfire_cases"></div>
+    <!-- Bushfire Areas vs Deaths and Injuries by Australian States -->
+    <div id="bushfire_areas"></div>
 
     <!-- Deaths and Injuries by State and Extreme Weather Conditions -->
     <div id="extreme_weather"></div>
@@ -73,31 +73,31 @@
     <div id="weather_injuries"></div>
   </div>
 
-  <!-- Bushfire Cases Visualization Script -->
+  <!-- Bushfire Areas Visualization Script -->
   <script type="text/javascript">
     var bushfireCasesSpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 450,
     "height": 300,
     "title": {
-      "text": "Bushfire Cases vs Deaths and Injuries by Australian States",
+      "text": "Bushfire Areas vs Deaths and Injuries by Australian States",
       "fontSize": 16
     },
     "data": {
       "values": [
-        {"state": "VIC", "bushfire_cases": 1583, "deaths_injuries": 39},
-        {"state": "NSW", "bushfire_cases": 5682, "deaths_injuries": 91},
-        {"state": "SA", "bushfire_cases": 313, "deaths_injuries": 40},
-        {"state": "WA", "bushfire_cases": 2044, "deaths_injuries": 42},
-        {"state": "NT", "bushfire_cases": 14, "deaths_injuries": 14},
-        {"state": "ACT", "bushfire_cases": 90, "deaths_injuries": 3},
-        {"state": "TAS", "bushfire_cases": 45, "deaths_injuries": 7},
-        {"state": "QLD", "bushfire_cases": 574, "deaths_injuries": 42}
+        {"state": "VIC", "bushfire_areas": 1583, "deaths_injuries": 39},
+        {"state": "NSW", "bushfire_areas": 5682, "deaths_injuries": 91},
+        {"state": "SA", "bushfire_areas": 313, "deaths_injuries": 40},
+        {"state": "WA", "bushfire_areas": 2044, "deaths_injuries": 42},
+        {"state": "NT", "bushfire_areas": 14, "deaths_injuries": 14},
+        {"state": "ACT", "bushfire_areas": 90, "deaths_injuries": 3},
+        {"state": "TAS", "bushfire_areas": 45, "deaths_injuries": 7},
+        {"state": "QLD", "bushfire_areas": 574, "deaths_injuries": 42}
       ]
     },
     "params": [
       {
-        "name": "bushfire_cases_slider",
+        "name": "bushfire_areas_slider",
         "value": 10000,
         "bind": {
           "input": "range",
